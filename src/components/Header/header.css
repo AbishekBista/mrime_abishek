@@ -24,6 +24,10 @@
     text-decoration: none;
 }
 
+.header__nav .header__nav-links:hover {
+    cursor:pointer;
+    text-decoration: underline;
+}
 .img__placeholder {
     height: 40px; 
     width: 40px;
