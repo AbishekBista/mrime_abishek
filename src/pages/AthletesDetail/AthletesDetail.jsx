@@ -11,7 +11,7 @@ const AthletesDetail = () => {
   const params = useParams();
   console.log(params.id)
 
-  const item = data.filter(player => player.id === params.id ? {...player}: null);
+  const item = data.filter(player => player.id === params.id ? {...player}: null)[0];
   return (
     <div className="athletes_detail">
       <div className="main_div">
