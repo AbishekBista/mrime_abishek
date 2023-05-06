@@ -1,4 +1,4 @@
-import React, {useState} from 'react'
+import React from 'react'
 
 import './athletesdetail.css';
 import scan_img from "../../assets/scan.png";
@@ -11,10 +11,7 @@ const AthletesDetail = () => {
   const params = useParams();
   console.log(params.id)
 
-  const [item, setItem] = useState(data.filter(player => {
-    if(player.id === params.id)
-      return {...player}
-  })[0]);
+  const item = data.filter(player => player.id === params.id ? player: null)[0];
   return (
     <div className="athletes_detail">
       <div className="main_div">
