@@ -17,7 +17,7 @@ const Athletes = () => {
 })
   return (
     <div className="athletes_dashboard">
-      <h1>The Roster</h1>
+      <h1>List of Athletes</h1>
     <div className="athletes_list">
       {athleteElement}
     </div>
