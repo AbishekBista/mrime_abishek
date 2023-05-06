@@ -14,7 +14,7 @@ const AthletesDetail = () => {
   const [item, setItem] = useState(data.filter(player => {
     if(player.id === params.id)
       return {...player}
-  }));
+  })[0]);
   return (
     <div className="athletes_detail">
       <div className="main_div">
